@@ -1,0 +1,56 @@
+package contaagua;
+
+import java.util.Scanner;
+
+public class ContaAgua{
+	
+	public static void main(String[]args) {
+	
+	double consumo,preco_total,preco_fixo,desconto,consumo_atual,taxa,preco_ativado;
+	
+	Scanner ler=new Scanner(System.in);
+	
+	System.out.println("-----------------------------------");
+	System.out.println("----Sistema de Cobrança de Agua----");
+	System.out.println("-----------------------------------");
+	
+	consumo = ler .nextDouble();
+	
+	//VARIÁVEIS 
+	preco_total=0;
+	preco_fixo=0;
+	desconto=0;
+	consumo_atual=0;
+	taxa=0;
+	preco_ativado=0;
+	
+	//CONSUMO=120
+	
+	if(consumo<=10) {
+		preco_total=7;
+		preco_fixo=7;
+		consumo_atual=consumo;
+	}
+	if(consumo>10) &&(consumo<=30){
+		preco_fixo=7;
+		desconto=10;
+		taxa=1;
+	}
+	if(consumo>30)&&(consumo<100){
+		preco_fixo=7+20;
+		descnto=30;
+		taxa=2;
+	}
+	if (consumo >100) {
+		preco_fixo=7+20+140;
+		desconto=100;
+		taxa=5;
+	}
+	
+	consumo_atual=consumo_desconto;
+	preco_ativado=taxa*consumo_atual;
+	preco_toatal=preco_fixo+preco_ativado;
+	
+	System.out.println("==>Preço Total a ser Pago:"+preco_total);
+   }
+}
