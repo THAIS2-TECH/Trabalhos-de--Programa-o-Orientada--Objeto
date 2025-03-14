@@ -8,14 +8,14 @@ public class Real {
 		double n1;
 		double n2;
 		
-		System.out.printf("Algoritmo para calcular entre dois números:");
-		System.out.printf("digite o primeiro número:");
+		System.out.printf("Algoritmo para calcular entre dois nÃºmeros:");
+		System.out.printf("digite o primeiro nÃºmero:");
 		Scanner ler = new Scanner(System.in);
 		n1 = ler.nextDouble();
-		System.out.printf("digite o segundo número:");
+		System.out.printf("digite o segundo nÃºmero:");
 		n2 = ler.nextDouble();
 		double media = (n1+n2)/2;
-		System.out.printf(" o valor da média é:%f",media);
+		System.out.printf(" o valor da mÃ©dia Ã©:%f",media);
 		
 		
 	}
